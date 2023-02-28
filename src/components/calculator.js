@@ -3,7 +3,7 @@ import "./calculator.css";
 import { Input } from "antd";
 
 function Calculator() {
-  const [result, setresult] = useState([]);
+  const [result, setresult] = useState("");
 
   const onclickhandler = (e) => {
     setresult(result.concat(e.target.value));
@@ -13,6 +13,7 @@ function Calculator() {
   };
   const abc = () => {
     setresult(eval(result));
+    console.log(setresult);
   };
   const modulus = () => {
     let x = result / 100;
