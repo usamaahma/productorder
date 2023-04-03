@@ -1,12 +1,15 @@
 import "./App.css";
-import Calculator from "./components/calculator";
-import Crud from "./components/crud/crud";
-import Seach from "./components/search/seach";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import Router from "./routes";
 
 function App() {
   return (
     <div className="App">
-      <Seach />
+      <Provider store={store}>
+        {" "}
+        <Router />
+      </Provider>
     </div>
   );
 }
