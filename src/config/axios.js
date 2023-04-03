@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "http://localhost:5000/v1";
+const url = "https://trisage-backend.onrender.com";
 
 const users = axios.create({
   baseURL: `${url}/users`,
